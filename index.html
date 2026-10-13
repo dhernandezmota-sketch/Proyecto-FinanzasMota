@@ -50,12 +50,15 @@
 
         </ul>
 
-    </nav>  
-<button id="menu-toggle" class="menu-toggle"
- aria-label="Abrir menú" aria-expanded="false"
- aria-controls="mobile-menu">☰</button>
-</div>
+    </nav> 
 
+    <!--Boton Menu movil--> 
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+<!--Navegación movil-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
         <li>
@@ -76,41 +79,124 @@
       </ul>
      
     </nav>
-
     </header>
+
+    <!--INICIO MAIN (PRINCIPAL) del desarrollo-->
 
     <main>
         <!--Sección para el carrusel-->
 
-     <section id="carrusel" class="carousel-section container">
-       <h2>Cursos de finanzas</h2>
+     <section id="inico" class="hero-section">
        <div class="carousel-track" id="carouseltrackebc">
+
             <!--Primera imagen de hero-->
            <div class="carousel-slide">
                <img src="img/hero1.jpg" alt="imagen cursos hero">
+               <div class="slide-overlay">
+                    <span class="badge">Mente financiera</span>
+                    <h1>Finanzas responsables <span class="highlight-yellow">Banca empresarial</span></h1>
+                    <p>Aprende a invertir tu dinero de manera responsable.</p>
+                    <a href="#servicios" class="btn-hero">Cotizar cursos</a>
+                </div>
            </div>
 
            <!--Segunda imagen de hero-->
            <div class="carousel-slide">
                <img src="img/hero2.jpg" alt="imagen finanzas hero">
+               <div class="slide-overlay">
+                    <span class="badge">Financieros diversificados</span>
+                    <h1>La importancia de separar bienes <span class="highlight-yellow">Balance empresarial</span></h1>
+                    <p>Diversifica tu capital concientemente.</p>
+                    <a href="#servicios" class="btn-hero">Iniciar sesiones</a>
+                </div>
            </div>
 
            <!--Tercera imagen de hero-->
            <div class="carousel-slide">
                <img src="img/hero3.jpg" alt="imagen dinero hero">
+               <div class="slide-overlay">
+                    <span class="badge">Aprendizaje de calidad</span>
+                    <h1>Inversiones para todos <span class="highlight-yellow">Más alla de solo CETES</span></h1>
+                    <p>Crece junto con tu dinero.</p>
+                    <a href="#servicios" class="btn-hero">Descubrir cursos</a>
+                </div>
            </div>
 
        </div>
 
+        <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
+        <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
      </section>
 
+     <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Cursos de finanzas</h3>
+                </div>
 
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Diversificación de tu dinero</h4>
+                        <p>Asesoramiento integral para invertit tu dinero.</p>
+                    </div>
+                
+                 <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Inversiones profesionales</h4>
+                        <p>Aprende las diferencias entre tus activos y sus valores.</p>
+                    </div>
 
-<p>This is a paragraph.</p>
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Domina las inversiones</h4>
+                        <p>Controla tu dinero y no el dinero a ti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/servicios1.jpg" alt="sobre nosotros">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el flujo del dinero.</h3>
+                    <p>En <strong>Finanzas Mota</strong>, bajo la dirección del Lic. Diego Mota, integramos tus metas y nuestro cocnocimiento para el manejo de tu dinero.</p>
+                    <p>Brindamos consultoría y soluciones a la medida para el manejo de tu dinero.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+<!--FOOTER-->
 <footer>
   <div class="footer-social">
     <div class="container social-icons">
